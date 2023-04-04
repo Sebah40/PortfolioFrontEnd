@@ -19,7 +19,29 @@
     </header>
     <main>
 
+      <div id="arriba">
+      <span class="rocket">🚀</span>
+      </div>
+      <script>
+var btn = $("#arriba");
 
+$(window).scroll(function () {
+  $(this).scrollTop() > 100 ? btn.fadeIn() : btn.fadeOut();
+});
+
+btn.click(function () {
+  $("body,html").animate({
+      scrollTop: 0
+    }, 1000);
+
+  return false;
+});
+
+
+const funs = new Funs();
+funs.signature();
+
+      </script>
   <div class="row">
     <div class="col-sm-4">
       <h1>About me</h1>
@@ -45,6 +67,12 @@
       </p>
     </div>
   </div>
+
+  <script>
+    $("body").css("display", "none");
+    $("body").hide();
+    $("body").fadeIn(2000);
+  </script>
       <section id="Educación">
         <h2>Education</h2>
         <div class="caja">
