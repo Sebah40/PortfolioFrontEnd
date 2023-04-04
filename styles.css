@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'open sans';
+  src:  url('opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+        url('opensans-variablefont_wdthwght-webfont.woff') format('woff');
+}
+
+body {
+  font-family: 'Open Sans';
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 30, 48);
+  color: azure;
+}
+
+
+ul {
+  list-style: none; /* Para el header */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #002186;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.caja {
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.64);
+  margin: 0 0 40px;
+  padding: 20px;
+  background-color: #2f003f;
+}
